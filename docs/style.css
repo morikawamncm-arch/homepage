@@ -1,0 +1,144 @@
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff0f5;
+    color: #333;
+  }
+  header {
+    background: linear-gradient(to right, #ffc0cb, #ffe4e1);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  nav {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  nav a {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ffc0cb;
+    border-radius: 20px;
+    background-color: #fff0f5;
+  }
+  nav a:hover {
+    background-color: #ffe4ec;
+  }
+  section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  h1, h2, h3 {
+    color: #e91e63;
+  }
+  button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: #c2185b;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  input, textarea, select {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+      width: 100%;
+      text-align: center;
+      padding: 0.75rem 0;
+      border-top: 1px solid #eee;
+    }
+  }
+
+/* 物件カード用 */
+#property-container {
+  display: flex;
+  flex-direction: column; /* 1行に1物件 */
+  gap: 15px;
+  padding: 20px;
+}
+
+.property-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* 横幅の比率 */
+.property-name {
+  flex: 3;
+  padding-right: 10px;
+}
+
+.property-price {
+  flex: 2;
+  padding-right: 10px;
+}
+
+.property-img {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 追加 */
+}
+
+/* 画像サイズを固定 */
+.property-image {
+  width: 150px;   /* 好きな固定幅 */
+  height: 100px;  /* 好きな固定高さ */
+  object-fit: cover; /* 比率を維持して切り抜き */
+  border-radius: 4px;
+}
+
+/* フィルターボタン */
+.filter-btn {
+  background: #fff0f5;
+  color: #e91e63;
+  border: 2px solid #ffc0cb;
+  padding: 0.5rem 0.9rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.filter-btn:hover {
+  background: #ffe4ec;
+}
+.filter-btn.active {
+  background: #e91e63;
+  color: #fff;
+  border-color: #c2185b;
+}
