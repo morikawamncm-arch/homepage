@@ -167,7 +167,8 @@ async function showDetail(htmlFile) {
   const modalBody = document.getElementById("modal-body");
   
   try {
-    const url = `${htmlFile}?nocache=${Date.now()}`;
+    // CSVの中身はファイル名のみなので、detailsフォルダ内を参照するようにパスを結合する
+    const url = `details/${htmlFile}?nocache=${Date.now()}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error("Network response was not ok");
     const text = await res.text();
