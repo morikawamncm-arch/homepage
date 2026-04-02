@@ -69,6 +69,7 @@ function renderProperties(data) {
       <th>場所</th>
       <th>その他</th>
       <th>画像</th>
+      <th>詳細</th>
     </tr>
   `;
 
@@ -84,6 +85,11 @@ function renderProperties(data) {
           ? `<img src="images/${item["画像"]}" alt="${item["物件名"] || ""}">`
           : `<div style="width:120px;height:80px;background:#eee;display:flex;justify-content:center;align-items:center;">画像なし</div>`
         }
+      </td>
+      <td>
+        ${item["詳細"]
+          ? `<button class="detail-btn" onclick="showDetail('${item["詳細"]}')">詳細</button>`
+          : `-`}
       </td>
     </tr>
   `).join("");
@@ -135,3 +141,41 @@ function setupButtons() {
 
 // 初期実行
 setupButtons();
+
+// モーダルの設定
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("detail-modal");
+  const closeBtn = document.querySelector(".close-btn");
+  
+  if (closeBtn) {
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+});
+
+// 詳細表示（非同期でHTML取得）
+async function showDetail(htmlFile) {
+  if (!htmlFile || htmlFile === "-") return;
+  const modal = document.getElementById("detail-modal");
+  const modalBody = document.getElementById("modal-body");
+  
+  try {
+    const url = `${htmlFile}?nocache=${Date.now()}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Network response was not ok");
+    const text = await res.text();
+    modalBody.innerHTML = text;
+    modal.style.display = "block";
+  } catch (err) {
+    console.error("詳細情報の読み込みに失敗しました", err);
+    modalBody.innerHTML = "<p style='color:red;'>詳細情報の読み込みに失敗しました。</p>";
+    modal.style.display = "block";
+  }
+}
