@@ -181,3 +181,17 @@ button:hover, .filter-btn:hover {
     margin: 20% auto;
   }
 }
+/* トップ画像用（余白消す） */
+#top {
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+  background: none;
+}
+
+/* トップ画像サイズ調整 */
+.top-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
