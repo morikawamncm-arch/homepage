@@ -79,7 +79,7 @@ function renderProperties(data) {
   const rows = data.map(item => `
     <tr>
       <td>${item["物件名"] || "名称未設定"}</td>
-      <td>${item["部屋番号"] || "名称未設定"}</td>
+      <td>${item["部屋番号"] || "戸建て"}</td>
       <td>${item["家賃"] || "不明"}</td>
       <td>${item["管理費"] || "不明"}</td>
       <td>${item["住所"] || "未記載"}</td>
