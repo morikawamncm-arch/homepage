@@ -67,8 +67,8 @@ function renderProperties(data) {
       <th>物件名</th>
       <th>家賃</th>
       <th>管理費</th>
-      <th>場所</th>
-      <th>その他</th>
+      <th>住所</th>
+      <th>間取り</th>
       <th>画像</th>
       <th>詳細</th>
     </tr>
@@ -80,8 +80,8 @@ function renderProperties(data) {
       <td>${item["物件名"] || "名称未設定"}</td>
       <td>${item["家賃"] || "不明"}</td>
       <td>${item["管理費"] || "不明"}</td>
-      <td>${item["場所"] || "未記載"}</td>
-      <td>${item["その他"] || "なし"}</td>
+      <td>${item["住所"] || "未記載"}</td>
+      <td>${item["間取り"] || "なし"}</td>
       <td>
         ${item["画像"]
           ? `<img src="images/${item["画像"]}" alt="${item["物件名"] || ""}">`
