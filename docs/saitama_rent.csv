@@ -1,2 +1,7 @@
-﻿物件名,家賃,管理費,場所,その他,画像,詳細
-狭山グリーンハイツ,90000円,10000,埼玉,4dk,sayama.png,saitama_rent_1.html
+﻿物件名,部屋番号,家賃,管理費,場所,間取り,画像,詳細
+狭山グリーンハイツ,503,69000,10000,狭山市笹井1-11-12,4dk,sayama.png,saitama_rent_1.html
+フォレストナエタワ上福岡,201,47000,5000,ふじみ野市鶴ケ舞 1-26-6,2k,naetawa.png,saitama_rent_1.html
+めぐみ荘,102,30000,10000,埼玉県朝霞市幸町1-13-19,1R,megumisou.png,saitama_rent_1.html
+めぐみ荘,103,30000,10000,埼玉県朝霞市幸町1-13-19,1R,megumisou.png,saitama_rent_1.html
+めぐみ荘,201,35000,10000,埼玉県朝霞市幸町1-13-19,1R,megumisou.png,saitama_rent_1.html
+めぐみ荘,202,35000,10000,埼玉県朝霞市幸町1-13-19,1R,megumisou.png,saitama_rent_1.html
