@@ -65,6 +65,7 @@ function renderProperties(data) {
   const headerRow = `
     <tr>
       <th>物件名</th>
+      <th>部屋番号</th>
       <th>家賃</th>
       <th>管理費</th>
       <th>住所</th>
@@ -78,6 +79,7 @@ function renderProperties(data) {
   const rows = data.map(item => `
     <tr>
       <td>${item["物件名"] || "名称未設定"}</td>
+      <td>${item["部屋番号"] || "名称未設定"}</td>
       <td>${item["家賃"] || "不明"}</td>
       <td>${item["管理費"] || "不明"}</td>
       <td>${item["住所"] || "未記載"}</td>
