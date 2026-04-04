@@ -37,7 +37,7 @@ async function loadCSVFile(filename) {
   return list;
 }
 
-// データ読み込み（販売/賃貸＋都道府県）
+// データ読み込み（戸建て/賃貸＋都道府県）
 let mode = "sale";
 async function loadData(pref) {
   const map = {
