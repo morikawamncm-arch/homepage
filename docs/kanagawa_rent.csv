@@ -1,3 +1,7 @@
-﻿物件名,部屋,家賃,管理費,場所,その他,画像,詳細
-アイビーヒルズ,101,30000,10000,神奈川,1k,kanagawa_rent_1.png,kanagawa_rent_1.html
-
+﻿﻿物件名,部屋番号,家賃,管理費,住所,間取り,画像,詳細
+アイビーヒルズ,101,30000,10000,神奈川県横浜市戸塚区戸塚町3598,1R,kanagawa_rent_1.png,kanagawa_rent_1.html
+フォレストカジイ相模大野,101,35000,10000,神奈川県相模原市南区旭町5-18,1R,kajii_rent_1.png,kanagawa_rent_1.html
+フォレストカジイ相模大野,102,35000,10000,神奈川県相模原市南区旭町5-18,1R,kajii_rent_1.png,kanagawa_rent_1.html
+フォレストカジイ相模大野,201,35000,10000,神奈川県相模原市南区旭町5-18,1R,kajii_rent_1.png,kanagawa_rent_1.html
+フォレストカジイ相模大野,202,35000,10000,神奈川県相模原市南区旭町5-18,1R,kajii_rent_1.png,kanagawa_rent_1.html
+フォレストカジイ相模大野,203,35000,10000,神奈川県相模原市南区旭町5-18,1R,kajii_rent_1.png,kanagawa_rent_1.html
