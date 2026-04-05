@@ -208,6 +208,20 @@ button:hover, .filter-btn:hover {
   padding: 10px;
   text-align: left;
 }
+.line-btn {
+  display: inline-block;
+  background: #06C755; /* LINEグリーン */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.line-btn:hover {
+  background: #05b34f;
+}
 
 .company-table th {
   background-color: #f5f5f5;
